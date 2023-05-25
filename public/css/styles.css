@@ -1,0 +1,86 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #EAC926;;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.titulares{
+   font-size: 24px;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+.descuentos{
+    font-size: 16px;
+}
+
+.descripciones{
+    font-size: 16px;
+}
+
+header div.buscador .input{
+    background-color: white;
+    width: max-content;
+    border: solid 1px black;
+    color: grey;
+}
+
+header .buscador .lupa { 
+    background-color: white;
+    width: max-content;
+    border: solid 1px black;
+    color: grey;
+}
+
+header p{
+    text-align: center;
+}
+
+header nav ul li a{
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header nav ul li{
+    list-style-type: none;
+}
+
+header div.burger-menu i{
+    background-color: #1259c3;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    width: max-content;
+    border: radia ;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+header div.burger-menu{
+    text-align: center;
+}
+
+footer section{
+    text-align: center;
+    color: #666;
+}
+footer section div{
+    margin-bottom: 10px;
+}
+
+footer section div i{
+    color: #1259c3;
+    font-size: 2em;
+}
+
+footer section p{
+    margin: 5px 0px;
+}
