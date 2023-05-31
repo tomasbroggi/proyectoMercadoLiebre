@@ -1,146 +1,315 @@
-/*Iniciar css desde cero con clases de playground*/
-
-/*Borrar la mayoria menos top y nav. Ver Flexbox margen derecho. Hover, /*
-
 *{
-    font-family: 'Roboto', sans-serif;
+    margin:0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
-header{
-    background-color: #EAC926;;
+
+body {
     font-family: 'Roboto', sans-serif;
-    width: 100vw;
 }
 
-
-.titulares{
-   font-size: 24px;
+header {
+    background-color: #EAC926;
 }
 
-.precios{
-    font-size: 18px;
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
 }
 
-.descuentos{
-    font-size: 16px;
+.logo {
+    width: 50%;
+    padding: 10px;
+
 }
 
-.descripciones{
-    font-size: 16px;
+.buscador{
+    width: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
 }
 
-header div.buscador .input{
-    background-color: white;
-    width: max-content;
-    border: solid 1px black;
-    color: grey;
-}
-
-header .buscador .lupa { 
-    background-color: white;
-    width: max-content;
-    border: solid 1px black;
-    color: grey;
-}
-
-header p{
+header p {
     text-align: center;
 }
 
-header nav ul li a{
-    font-size: 12px;
-    text-align: left;
-    text-decoration: none;
-    list-style-type: none;
+header nav {
+    display:none;
 }
 
-header nav ul li{
+header nav ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    
+}
+
+header nav ul li {
     list-style-type: none;
-    text-align: left;
+    text-emphasis: left;
+}
+
+header nav ul {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 42%;
+
+}
+
+header .buscador div.input {
+background-color: #FFF;
+border: 1px solid #000;
+color: #666;
+width: 200px;
+
+}
+
+header .buscador div.lupa i{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
 }
 
 header div.burger-menu i{
+    color:#FFF;
     background-color: #1259c3;
+    font-size: 20px;
     padding: 10px;
     margin: 10px 0px 20px 0px;
-    width: max-content;
-    border: radia ;
-    color: white;
     border-radius: 5px;
-    text-align: center;
+    height: 25px;
+    width: 40px;
 }
 
-header div.burger-menu{
-    text-align: center;
+header div.burger-menu {
+        text-align: center;
 }
-
-footer section{
-    text-align: center;
-    color: #666;
+header {
+    width: 100vw;
 }
-footer section div{
-    margin-bottom: 10px;
-}
-
-footer section div i{
-    color: #1259c3;
-    font-size: 2em;
-}
-
-
-footer section{
-    margin: 100vw;
-    text-align: center;
-}
-
-main{
-    width: 90vw;
-    text-align: center;
-}
-
-header{
+.banner-img{
     width: 100vw;
 }
 
-.banner{
-     width: 100vw;
-}
+main section{
+    margin: 0 auto;
+    width: 90vw;
+    background-color: whitesmoke;
+ }
+ main {
+    background-color: rgb(240, 239,239);
+ }
 
-main section article {
+main section article{
     margin-bottom: 10px;
 }
 
-main section div.info-article{
-    border-top: 1px solid #ebebee;
-    padding: 15px
+main section article img{
+    width: 100%;
+}
+.info-article {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.precio{
+    width: 40%
+}
+
+article {
+    transition: all 0.7s
+}
+.descuento {
+    width: 60%
+    
+}
+main section article div i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px; 
+    
+}
+main section article div i.fas{
+    color: #39b54a;
+}
+main section article p.descuento{
+    color:#39b54a;
+    text-align: right;
+}
+
+main section article div {
+    position: relative;
+}
+.desc-prod{
+    display: block;
+}
+
+#formulario-registro{
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+}
+
+.formularios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+
+}
+
+form div {
+    margin-bottom: 10px;
+    border-radius: 5%;
+    width:100%;
+}
+
+.text-field {
+    padding: 5px;
+    width: 100%;
+}
+
+.selecciones {
+    display:flex;
+    flex-direction: column;
 }
 
 
-main section div div i{
-    width: 40px;
-    height: 40px;
-    border: solid 1px green;
-    border-radius: 100%;
-    color: #39b5aa4a;
+.botonForm{
+    width: 40%;
+
 }
-.descripcion{
-    display: none;
-}
-@media (min-width: 361px){
-    .descripcion{
-        display: block;
+
+.botonSubmit{
+    background-color: green;
+    color: #FFF;
     }
+
+.botonReset{
+        background-color: red;
+        color:#FFF;
+}
+.botonEnviar {
+    background-color: grey;
+    color:#FFF;
+    transition:background-color 0.7s;
+
+    
+}
+.botonEnviar:hover {
+    background-color: #0022AA ;
+
+}
+ @media (min-width: 361px){
+
+    .productos{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .desc-prod{
+        display:block;
+    }
+
+    .descuento{
+        width:50%
+    }
+    .precio{
+        width:50%
+    }
+    
     main section article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
+    width: 45%;
+    }
+
+    .formularios {
+        max-width: 450px;
         
     }
-    header nav{
-        display: none;
+    header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+}
+header div.burger-menu {
+    display: none;
+}
+
+
+ @media (min-width: 769px){
+
+    .desc-prod{
+    display:none;
+ }
+    article:hover .desc-prod{
+        display:block;
     }
+     main article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    article:hover .info-article i {
+        transform:rotate(-90deg);
+    }
+    .formularios {
+        max-width: 450px;
+        align-items: center;
+    }
+    
+    footer article div i:hover{
+        color: rgb(205, 205, 72);
+    }   
+
 }
 
-@media (min-width: 769px){
 
+footer {
+    text-align: center;  
+}
+footer article div i{
+    transition: color 0.5s;
+}
+
+footer div.credit-card i{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
 
 }
+
+
+footer div.gift i{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+  
+
+footer div.shield i{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px; 
+ }
+ 
+ footer h5 {
+    text-align: left;
+ }
