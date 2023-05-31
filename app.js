@@ -1,12 +1,24 @@
-const express = require("express");
-const path = require("path");
-const app = express();
+const express = require ("express");
+const path = require ("path");
+const app = express ();
 
-let publicPath = path.resolve(__dirname, "./public");
+app.use(express.static("public"))
 
-app.use(express.static(publicPath));
-app.listen(4000, () => console.log("Listening"));
+app.listen(process.env.PORT || 4000,() =>{
+    console.log ("Listening")
+})
 
-app.get("/", (req, res) => {
-    res.sendFile(path.resolve(__dirname, ("./views/home.html")));
-});
+app.get ("/", (req,res)=>{
+    res.sendFile(path.join(__dirname,"/view/home.html")) 
+})
+
+app.get ("/login", (req,res)=>{
+    res.sendFile(path.join(__dirname,"/view/login.html")) 
+})
+
+app.get ("/register", (req,res)=>{
+    res.sendFile(path.join(__dirname,"/view/register.html")) 
+})
+    
+
+    
